@@ -16,7 +16,7 @@ public class WeatherAPIController {
             // Replace with the actual latitude, longitude, and OpenWeatherMap API key
             String lat = "32.715736";
             String lon = "-117.161087";
-            String apiKey = "YOUR_API_KEY";
+            String apiKey = "777d2b06a33946bf47eba273e42a3b7e";
 
             String apiUrl = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=" + apiKey + "&units=metric";
             RestTemplate restTemplate = new RestTemplate();
