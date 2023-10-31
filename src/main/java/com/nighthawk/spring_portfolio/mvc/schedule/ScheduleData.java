@@ -59,4 +59,12 @@ public class ScheduleData {
     public void setClassPeriod5(String classPeriod5) {
         this.classPeriod5 = classPeriod5;
     }
+
+    ScheduleData sampleScheduleData = new ScheduleData(
+    "Math",
+    "Science",
+    "History",
+    "English",
+    "Art"
+);
 }
