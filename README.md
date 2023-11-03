@@ -1,32 +1,83 @@
-## Recent Changes
-[Upgrading old dependencies to newest versions.](https://github.com/nighthawkcoders/spring_portfolio/issues/12)
+Certainly! Here's a sample README for the backend repository of your project:
 
-# [Spring Portfolio Starter](https://nighthawkcodingsociety.com/projectsearch/details/Spring%20Portfolio%20Starter)
+---
 
-- Runtime link: https://spring.nighthawkcodingsociety.com/
-- JWT Login: https://nighthawkcoders.github.io/APCSA/data/login
-- Jokes endpoint: https://spring.nighthawkcodingsociety.com/api/jokes/
+# Pluto Backend
 
+This is the backend repository for the Pluto Student Helper App. Pluto is a web application designed to assist students in managing their daily school routine, staying updated with the weather, receiving announcements from teachers, and organizing their assignments.
 
+## Features
 
-## Visual thoughts
+- **Authentication:** Secure user login and authorization using JWT cookies.
 
-- Starter code should be fun and practical
-- Organize with Bootstrap menu 
-- Add some color and fun through VANTA Visuals (birds, halo, solar, net)
-- Show some practical and fun links (hrefs) like Twitter, Git, Youtube
-- Show student project specific links (hrefs) per page
-- Show student About me pages
+- **Data Storage:** Use SQLite Database to store announcements and assignments.
 
-## Getting started
+## Technologies Used
 
-- Clone project and open in VSCode
-- Verify Project Structure to use a good Java JDK (adoptopenjdk:17)
-- Play or entry point is Main.java, look for Run option in code.  This eanbles Spring to load
-- Java source (src/main/java/...) has Java files.  Find "controllers" path, these files enable HTTP route and HTML file relationship.
-- HTML source (src/main/resources/...) had templates and supporting files.  Find index.html as this file is launched by defaul in Spring.  Other HTML files are loaded by building an "@Controller"
+- **Server:**
+  - Node.js
+  - Express.js for building the API
+  - SQLite for database storage
+  - JWT for user authentication
 
-## IDE management
+## Installation
 
-- A ".gitignore" can teach a Developer a lot about Java runtime.  A target directory is created when you press play button, byte code is generated and files are moved into this location.
-- "pom.xml" file can teach you a lot about Java dependencies.  This is similar to "requirements.txt" file in Python.  It manages packages and dependencies.
+1. Clone this repository to your local machine:
+
+```
+git clone https://github.com/yourusername/pluto-backend.git
+```
+
+2. Navigate to the project directory:
+
+```
+cd pluto-backend
+```
+
+3. Install the required dependencies:
+
+```
+npm install
+```
+
+4. Set up environment variables for configuration (e.g., database connection, JWT secret). Create a `.env` file in the root directory and add the following:
+
+```
+DB_CONNECTION_STRING=your_database_connection_string
+JWT_SECRET=your_jwt_secret
+```
+
+## Usage
+
+1. Start the server:
+
+```
+npm start
+```
+
+2. The server will run on the specified port, and the API endpoints will be available for the frontend to interact with.
+
+## API Endpoints
+
+- **POST /api/login:** User login and authentication.
+
+- **GET /api/announcements:** Retrieve announcements from teachers.
+
+- **GET /api/assignments:** Retrieve assignments with due dates, priorities, and reminders.
+
+## License
+
+This project is licensed under the [Apache License 2.0](LICENSE).
+
+## Contact
+
+For any questions or feedback related to the backend, feel free to contact the project team:
+
+- Kevin Du
+- Orlando Carcamo
+- Soham Kamat
+- Aniket Chakradeo
+
+## Acknowledgments
+
+We'd like to thank the Nighthawk Coding Society, and especially Mr. Mortensen for providing the tools and resources that made this project possible.
