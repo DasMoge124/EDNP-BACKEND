@@ -1,5 +1,3 @@
-Certainly! Here's a sample README for the backend repository of your project:
-
 ---
 
 # Pluto Backend
